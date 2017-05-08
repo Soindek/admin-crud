@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="resources/css/style.css">
+        <link type="text/css" rel="stylesheet" href="vendors/css/grid.css">
+
+        <title>Copodium Admin</title>
+        
+    </head>
+    
+    <body>
+        
+        
+<!----------------------------------------------->   
+<!------------------ HEADER --------------------->
+<!-----------------------------------------------> 
+        
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="resources/img/BlackLogo.png" alt="Copodium logo" class="logo">
+                    <ul class="main-nav">
+                        <li><a href="#">Szabó László</a></li>
+                        <li><a href="#">Kijelentkezés</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+<!----------------------------------------------->             
+<!--------------- NEW DEVICE FORM --------------->
+<!----------------------------------------------->  
+        
+        <div class="item-form" style="display: none;">
+            <div class="row head">
+                <p>Add new device</p>
+                <i class="ion-android-cancel cancel-btn"></i>
+            </div>
+            <div class="box">
+                <div class="form-box">
+                    <div class="row form-table">
+                        <form class="new-device-form">
+                            
+                            <div class="row">
+                                <div class="col span-1-of-8">
+                                    <label for="name">Device name:</label>
+                                </div>
+                                <div class="col span-1-of-8">
+                                    <input type="text" name="name" id="name" value="Samsung Galaxy S7" required>
+                                </div>
+                                <div class="col span-1-of-8">
+                                    <label for="category">Type:</label>
+                                </div>
+                                <div class="col span-1-of-8">
+                                    <select name="category" id="category">
+                                        <option value="smart" selected>Smart</option>
+                                        <option value="basic">Basic</option>
+                                    </select>
+                                </div>
+                                <div class="col span-1-of-8">
+                                    <label for="expert">Exper's rate:</label>
+                                </div>
+                                <div class="col span-1-of-8">
+                                    <select name="expert" id="expert">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                                <div class="col span-1-of-8">
+                                    <label for="operatingSystem">System:</label>
+                                </div>
+                                <div class="col span-1-of-8">
+                                    <select name="operatingSystem" id="operatingSystem">
+                                        <option value="android" selected>Android</option>
+                                        <option value="ios">iOS</option>
+                                        <option value="windows">Windows</option>
+                                        <option value="none">None</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col span-1-of-8">
+                                    <label for="memory">RAM (GB):</label>
+                                </div>
+                                <div class="col span-1-of-8">
+                                    <input type="text" name="memory" id="memory" value="3">
+                                </div>
+                                <div class="col span-1-of-8">
+                                    <label for="processor">Processor:</label>
+                                </div>
+                                <div class="col span-1-of-8">
+                                    <input type="text" name="processor" id="processor" value="2.34 GHz-es négymagos">
+                                </div>
+                                <div class="col span-1-of-8">
+                                    <label for="camera">Camera (MP):</label>
+                                </div>
+                                <div class="col span-1-of-8">
+                                    <input type="text" name="camera" id="camera" value="12">
+                                </div>
+                                <div class="col span-1-of-8">
+                                    <label for="battery">Battery (mAh):</label>
+                                </div>
+                                <div class="col span-1-of-8">
+                                    <input type="text" name="battery" id="battery" value="2360">
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col span-1-of-8">
+                                    <label for="storage">Storage (GB):</label>
+                                </div>
+                                <div class="col span-1-of-8">
+                                    <input type="text" name="storage" id="storage" value="16 / 32">
+                                </div>
+                                <div class="col span-1-of-8">
+                                    <label for="screen">Display size:</label>
+                                </div>
+                                <div class="col span-1-of-8">
+                                    <input type="text" name="screen" id="screen" value="5.2">
+                                </div>
+                                <div class="col span-1-of-8">
+                                    <label for="price">Price (Ft):</label>
+                                </div>
+                                <div class="col span-1-of-8">
+                                    <input type="text" name="price" id="price" value="219000">
+                                </div>
+                                <div class="col span-1-of-8">
+                                    <label for="photo">Photo (URL):</label>
+                                </div>
+                                <div class="col span-1-of-8">
+                                    <input type="text" name="photo" id="photo" value="http://cdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s5-g900f.jpg">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col span-1-of-8">
+                                    <label for="description">Description:</label>
+                                </div>
+                                <div class="col span-7-of-8">
+                                    <textarea name="description" id="description">Röviden összefoglalva a fentieket, az S7 jó. Kicsit bővebben: nagyon jó. Egyrészt önmagában vizsgálva, másrészt az elődmodellhez és a konkurenciához képest is fel tud mutatni olyan funkciókat és kvalitásokat, amelyek kiemelik a kínálatból.</textarea>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <input type="submit" value="Save" id="submit" style="display: block;">
+                                <input type="submit" value="Update" id="update" style="display: none;"> 
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        
+        </div>
+                                  
+                    
+        
+<!----------------------------------------------->             
+<!----------------- DEVICE LIST ----------------->
+<!----------------------------------------------->                              
+        
+        <div class="table" style="display: block;">
+            <div class="row table-box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Experts</th>
+                            <th>System</th>
+                            <th>RAM</th>
+                            <th>Processor</th>
+                            <th>Camera</th>
+                            <th>Battery</th>
+                            <th>Screen</th>
+                            <th>Price</th>
+                            <th>Create</th>
+                            <th>Updated</th>
+                            <th class="add-btn"><i class="icon ion-android-add-circle"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody class="device-list">
+                          
+<!-----------------------------------------------
+                        <tr id="%deviceID%" data="%id%">
+                            <td class="device-name">Apple iPhone 7</td>
+                            <td class="device-type">Smart</td>
+                            <td class="device-expert-rate">6</td>
+                            <td class="device-system">iOS</td>
+                            <td class="device-RAM">2 GB</td>
+                            <td class="device-processor">2,34 GHz-es négymagos</td>
+                            <td class="device-camera">12 MP</td>
+                            <td class="device-battery">1960 mAh</td>
+                            <td class="device-screen">4,7"</td>
+                            <td class="device-price">210000</td>
+                            <td class="device-create">2017.02.04. 20:21</td>
+                            <td class="device-update">2017.02.05. 29:13</td>
+                            <td id="%trash%" class="trash-icon"><i class="ion-ios-trash-outline"></i></td>
+                        </tr>
+------------------------------------------------>
+                        
+                        </tbody>
+                    
+                </table>
+            </div>
+        </div>
+                
+
+                
+<!----------------------------------------------->
+<!--------------- LIST NAVIGATION --------------->
+<!-----------------------------------------------> 
+        
+        <div class="table-nav">
+            <div class="row">
+                <ul class="total">
+                    <li>Total devices:</li>
+                    <li class="total-devices">0</li>
+                </ul>
+                
+                <ul class="pages" style="display: none;">
+                    <li>Pages:</li>
+                </ul>
+            </div>
+        </div>
+
+<!-----------------------------------------------> 
+<!------------------- SCRIPTS ------------------->
+<!----------------------------------------------->         
+        
+        
+        <script src="resources/js/http.js"></script>
+        <script src="resources/js/phone.js"></script>
+        <!--    <script src="resources/js/app.js"></script>    -->
+        
+    </body>
+    
+</html>

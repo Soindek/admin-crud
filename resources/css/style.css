@@ -1,0 +1,268 @@
+/*Copodium blue: #378BDC */
+
+/* ------------------------------------------------- */
+/* BASIC SETUP */
+/* ------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: #555;
+    font-family: Open Sans;
+    font-size: 12px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+}
+
+/* ------------------------------------------------- */
+/* HEADER */
+/* ------------------------------------------------- */
+
+header {
+    height: 60px;
+    box-shadow: 0 2px 2px #dedede;
+    background-color: #fff;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    float: left;
+    margin-top: 12px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 3px 0;
+    text-decoration: none;
+    color: #555;
+    text-transform: uppercase;
+    font-size: 110%;
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav li a:active,
+.main-nav li a:hover {
+    text-decoration: none;
+    color: #555;
+    text-transform: uppercase;
+    font-size: 110%;
+    border-bottom: 2px solid #555;
+    transition: border-bottom 0.2s;
+}
+
+/* ------------------------------------------------- */
+/* TABLE OF DEVICES */
+/* ------------------------------------------------- */
+
+.table-box {
+    box-shadow: 0 2px 2px #dedede;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    padding: 14px 0 14px 0;
+}
+
+td:first-child:active,
+td:first-child:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+td i:active,
+td i:hover {
+    color: #111;
+    cursor: pointer;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+th {
+    padding: 12px 0 12px 0;
+    text-align: center;
+    background-color: #555;
+    color: #fff;
+}
+
+
+/* ------------------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.table {
+    margin-top: 30px;
+}
+
+.deleted {
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+/* ------------------------------------------------- */
+/* TABLE NAV */
+/* ------------------------------------------------- */
+
+.table-nav {
+    margin-top: 30px;
+    font-size: 110%;
+}
+
+.total {
+    width: auto;
+    float: left;
+}
+
+.total li {
+    display: inline-block;
+}
+
+.pages {
+    float: right;
+    list-style: none;
+}
+
+.pages li {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.pages li a:link,
+.pages li a:visited {
+    text-decoration: none;
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+.pages li a:active,
+.pages li a:hover {
+    text-decoration: none;
+    color: #555;
+    border-bottom: 1px solid #555;
+    transition: border-bottom 0.2s;
+}
+
+.pages .active {
+    text-decoration: none;
+    color: #555;
+    border-bottom: 1px solid #555;
+}
+
+/* ------------------------------------------------- */
+/* FORM */
+/* ------------------------------------------------- */ 
+
+.item-form {
+    margin-top: 30px;
+}
+
+.head {
+    background-color: #555;
+    box-shadow: 0 2px 2px #dedede;
+    color: #fff;
+    font-weight: bold;
+}
+
+.head p {
+    margin: 20px 0 0 30px;
+    display: inline-block;
+}
+
+.head i {
+    font-size: 200%;
+    float: right;
+    cursor: pointer;
+    padding: 12px 29px 12px 0;
+    cursor: pointer;
+    
+}
+
+.form-table {
+    box-shadow: 0 2px 2px #dedede;
+}
+
+/* ------------------------------------------------- */
+/* ADD NEW DEVICE */
+/* ------------------------------------------------- */
+
+th i,
+td i {
+    font-size: 200%;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------- */
+/* DEVICE FORM */
+/* ------------------------------------------------- */
+
+*:focus {outline: none;}
+
+.new-device-form {
+    width: 95%;
+    margin: 30px auto;
+
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 3px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 358px;
+}
+
+input[type=submit] {
+    position: relative;
+    float: right;
+    bottom: -7px;
+    padding: 10px 30px;
+    background-color: #555;
+    border: 1px solid #555;
+    border-radius: 3px;
+    font-size: 110%;
+    text-transform: uppercase;
+    color: #fff;
+    transition: background-color 0.2s, border 0.2s;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
